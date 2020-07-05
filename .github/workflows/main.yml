@@ -29,13 +29,15 @@ jobs:
     
     - name: Install Yarn
       uses: borales/actions-yarn@v2.0.0
+      env:
+        CI: ""
       with:
         cmd: install # will run `yarn install` command
     
-    - name: npm test:ci
-      run: npm run test:ci
-      env:
-         CI: ""
+#     - name: npm test:ci
+#       run: npm run test:ci
+#       env:
+#          CI: ""
     
     - name: Build Yarn 
       uses: borales/actions-yarn@v2.0.0
