@@ -29,8 +29,6 @@ jobs:
     
     - name: Install Yarn
       uses: borales/actions-yarn@v2.0.0
-      env:
-        CI: ""
       with:
         cmd: install # will run `yarn install` command
     
@@ -41,6 +39,8 @@ jobs:
     
     - name: Build Yarn 
       uses: borales/actions-yarn@v2.0.0
+      env:
+        CI: ""
       with:
         cmd: build # will run `yarn build` command
         
