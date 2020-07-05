@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import 'fontsource-roboto';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Nav from './Nav'
 import StatusCards from './StatusCards'
 import SelectCountry from './SelectCountry';
 import Graphs from './Graphs';
@@ -54,16 +53,13 @@ function Main() {
     return (
         <div className={mainClass.root}>
             <Grid container spacing={3} className={mainClass.rootGrid}>
-                {/* <Grid item xs={12}>
-                    <Nav />
-                </Grid> */}
                 <img src={logo} alt="covid-19 logo" style={{
                     width: 446,
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     minWidth: '30%',
                     marginTop: 30,
-                    marginBottom: 30
+                    marginBottom: 30,
 
                 }}/>
                 <Grid item xs={12} className={mainClass.selectStatus}>
